@@ -108,11 +108,11 @@ tfdv.display_schema(schema=schema)
 
 *注意：自动生成的模式是尽力而为的，只会尝试推断数据的基本属性。希望用户根据需要对其进行审查和修改。*
 
-### Training-Serving Skew Detection<a name="skewdetect"></a>
+### 训练-服务偏差检测<a name="skewdetect"></a> .
 
-#### Overview
+#### 概述\\
 
-TensorFlow Data Validation can detect distribution skew between training and serving data. Distribution skew occurs when the distribution of feature values for training data is significantly different from serving data. One of the key causes for distribution skew is using either a completely different corpus for training data generation to overcome lack of initial data in the desired corpus. Another reason is a faulty sampling mechanism that only chooses a subsample of the serving data to train on.
+TensorFlow Data Validation 可以检测训练数据和服务数据之间的分布偏差。当训练数据的特征值分布与服务数据明显不同时，就会出现分布偏斜。分布偏斜的一个关键原因是使用完全不同的语料库来训练数据生成，以克服所需语料库中初始数据的缺乏。另一个原因是错误的采样机制，它只选择服务数据的子样本进行训练。-+
 
 ##### 示例场景
 
